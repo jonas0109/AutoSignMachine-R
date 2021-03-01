@@ -7,11 +7,11 @@ on:
     #branches: [ main ]
   workflow_dispatch: # 手动触发
   schedule:
-    - cron: '21 0/2 * * *'
+    - cron: '21 0-8 * * *'
     
 
 jobs:
-  daily-task:
+  daily-task
     if: github.event.repository.owner.id == github.event.sender.id
 
     
