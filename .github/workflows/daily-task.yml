@@ -11,7 +11,7 @@ on:
     
 
 jobs:
-  daily-task
+  daily-task:
     if: github.event.repository.owner.id == github.event.sender.id
 
     
